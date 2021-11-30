@@ -1,0 +1,242 @@
+/*Cambios Generales*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*Body*/
+body {
+  color: #05233b;
+  font-family: 'Ultra', serif; }
+
+/*Logo*/
+.logo {
+  border-radius: 56px;
+  width: 60px;
+  height: 60px; }
+
+.enlace {
+  position: absolute;
+  padding: 20px 50px; }
+
+/*MENU*/
+nav {
+  background-image: linear-gradient(to top, white, #2d7ab9, #05233b);
+  height: 100px;
+  width: 100%; }
+  nav ul {
+    float: right;
+    margin-right: 85px; }
+    nav ul li {
+      display: inline-block;
+      line-height: 100px;
+      margin: 0 5px; }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        padding: 7px 13px;
+        border-radius: 6px;
+        text-transform: uppercase; }
+
+i a.active, li a:hover {
+  color: white;
+  background: #05233b;
+  transition: 4s; }
+
+.checkbtn {
+  font-size: 30px;
+  float: right;
+  line-height: 100px;
+  margin-right: 50px;
+  cursor: pointer;
+  display: none; }
+
+#check {
+  display: none; }
+
+/*@Media*/
+@media (max-width: 768px) {
+  .enlace {
+    padding-left: 20px; }
+  nav ul {
+    margin-right: 5px; }
+    nav ul li a {
+      font-size: 16px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .iconos div img {
+    width: 120px;
+    height: 120px; } }
+
+@media (max-width: 630px) {
+  .checkbtn {
+    display: block; }
+  ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background: #05233b;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 10;
+    font-family: sans-serif; }
+  #check:checked ~ ul {
+    left: 0; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+  .iconos {
+    display: flex;
+    flex-direction: column; }
+    .iconos div img {
+      width: 65px;
+      height: 65px; } }
+
+/*Carousel*/
+.slide {
+  margin-top: 10px; }
+  .slide img {
+    height: 50vh; }
+
+.carousel__parrafo h5 {
+  font-size: 26px;
+  font-family: sans-serif;
+  padding: 5px;
+  background-color: #05233b;
+  border-radius: 16px;
+  display: inline-block; }
+
+.carousel__parrafo p {
+  font-size: 19px;
+  font-family: sans-serif;
+  padding: 4px 20px;
+  background-color: #05233b;
+  border-radius: 16px; }
+
+/*General*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 8%; }
+
+.container__info {
+  width: 308px;
+  height: 410px;
+  background: #476279;
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8px 11px 17px #05233b;
+  margin-top: 5%;
+  border-radius: 9px; }
+
+.info--link:hover img {
+  transform: scale(1.1); }
+
+.info--link {
+  font-family: 'Ultra', serif;
+  text-align: center;
+  font-size: 19px;
+  color: white;
+  padding: 15px; }
+
+.span a {
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block; }
+  .span a p {
+    background: #05233b;
+    border-radius: 9px;
+    color: white; }
+
+/*Catalogo*/
+.imagenCatalogo {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  object-position: center; }
+
+.populares {
+  text-align: center;
+  margin-top: 2%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.grid div {
+  margin: 20px 8px;
+  border-radius: 6px;
+  box-shadow: 4px 2px 5px 3px #a3cdee; }
+  .grid div h5 {
+    text-decoration-line: line-through;
+    background: #b4b4a6;
+    display: inline-block; }
+
+.boton {
+  margin: 5px;
+  background: #05233b;
+  color: white;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 14px; }
+
+.boton:hover {
+  border: 2px solid #1f5680; }
+
+.nosotros {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .nosotros h2 {
+    font-weight: 300;
+    text-align: center; }
+
+.iconos {
+  display: flex;
+  justify-content: center; }
+  .iconos div {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center; }
+    .iconos div h3 {
+      text-align: center;
+      text-transform: uppercase; }
+
+/*Footer*/
+.footer {
+  margin-top: 5%;
+  text-align: center;
+  border-top: 2px;
+  border-left: 3px;
+  background-color: #05233b;
+  padding: 20px;
+  font-size: 8px; }
+
+.footer__logos {
+  border-radius: 13px;
+  margin: 3px;
+  width: 27px;
+  height: 27px; }
+
+.footer--copy {
+  color: white;
+  text-align: center;
+  font-size: 12px; }
+
+/*Contacto*/
+.section {
+  display: flex;
+  justify-content: center; }
+  .section form {
+    background-color: #1f5680;
+    padding: 50px;
+    color: white;
+    border-radius: 14px; }

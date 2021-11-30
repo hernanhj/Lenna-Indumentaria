@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contactanos. ¿Necesitás hablar con nosotros? ¡Estamos para ayudarte!">
+    <meta name="keywords" content="Email, Redes Sociales, Consulta, Preguntas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <title>Contacto</title>
+    <link rel="icon" href="imagen/lenna1.ico" />
+    <link rel="stylesheet" href="css/estilos.css"/>
+  </head>
+  <body>
+    <header>
+      <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <img src="imagen/menu-regular-24.png" alt="Logo Menu">
+          </label>
+          <a href="index.html" class="enlace"><img src="imagen/lenna2.png" title="Inicio" alt="Logo Lenna" class="logo"></a>
+          <ul>
+              <li><a href="abrigo.html">Abrigos</a></li>
+              <li><a href="ropa-deportiva.html">Ropa Deportiva</a></li>
+              <li><a href="conjuntos.html">Conjuntos</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+      </header>
+
+    <section class="section">
+      <form>
+        <table>
+          <tr>
+            <td><label for="nombre">Nombre</label></td>
+            <td>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Ingrese su nombre"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type="email" name="email" /></td>
+          </tr>
+          <tr>
+            <td><label for="telefono">Telefono</label></td>
+            <td><input type="telefono" name="telefono" /></td>
+          </tr>
+          <tr>
+            <td><label for="sexo">Sexo</label></td>
+            <td>
+              <select name="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <textarea
+          name="texto"
+          rows="4"
+          cols="40"
+          placeholder="Consulta"
+        ></textarea>
+        <input type="submit" value="Enviar" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div>
+          <a href="#"><img src="imagen/contacto.png" title="Contacto" class="footer__logos"></a>
+          <a href="https://whatsapp.com" target="blank"><img src="imagen/whatsapp2.png" class="footer__logos"></a>
+          <a href="https://instagram.com" target="blank"><img src="imagen/Instagram.png" class="footer__logos"></a>
+          <a href="https://facebook.com" target="blank"><img src="imagen/Facebook.png" class="footer__logos"></a>
+      </div>
+      <p class="footer--copy"> &copy; 2021 LENNA</p>
+  </footer>
+  </body>
+</html>
