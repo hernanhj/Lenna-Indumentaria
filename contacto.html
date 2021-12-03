@@ -9,17 +9,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <title>Contacto</title>
     <link rel="icon" href="imagen/lenna1.ico" />
     <link rel="stylesheet" href="css/estilos.css"/>
   </head>
   <body>
-    <header>
+    <header class="barra">
       <nav>
           <input type="checkbox" id="check">
           <label for="check" class="checkbtn">
-              <img src="imagen/menu-regular-24.png" alt="Logo Menu">
+              <img src="imagen/interface-button_icon.png" alt="Logo Menu">
           </label>
           <a href="index.html" class="enlace"><img src="imagen/lenna2.png" title="Inicio" alt="Logo Lenna" class="logo"></a>
           <ul>
@@ -31,55 +33,50 @@
       </nav>
       </header>
 
-    <section class="section">
-      <form>
-        <table>
-          <tr>
-            <td><label for="nombre">Nombre</label></td>
-            <td>
-              <input
-                type="text"
-                name="nombre"
-                placeholder="Ingrese su nombre"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td><label for="email">Email</label></td>
-            <td><input type="email" name="email" /></td>
-          </tr>
-          <tr>
-            <td><label for="telefono">Telefono</label></td>
-            <td><input type="telefono" name="telefono" /></td>
-          </tr>
-          <tr>
-            <td><label for="sexo">Sexo</label></td>
-            <td>
-              <select name="sexo">
-                <option value="M">Masculino</option>
-                <option value="F">Femenino</option>
-              </select>
-            </td>
-          </tr>
-        </table>
-        <textarea
-          name="texto"
-          rows="4"
-          cols="40"
-          placeholder="Consulta"
-        ></textarea>
-        <input type="submit" value="Enviar" />
-      </form>
-    </section>
-
-    <footer class="footer">
-      <div>
-          <a href="#"><img src="imagen/contacto.png" title="Contacto" class="footer__logos"></a>
-          <a href="https://whatsapp.com" target="blank"><img src="imagen/whatsapp2.png" class="footer__logos"></a>
-          <a href="https://instagram.com" target="blank"><img src="imagen/Instagram.png" class="footer__logos"></a>
-          <a href="https://facebook.com" target="blank"><img src="imagen/Facebook.png" class="footer__logos"></a>
+    <div class="contacto">
+      <div class="cont-1">
+        <div class="contl"></div>
+        <div class="contr">
+          <h2>Contacto</h2>
+            <input type="text" class="from" placeholder="Nombre">
+            <input type="email" class="from" placeholder="Email">
+            <input type="text" class="from" placeholder="Telefono">
+            <textarea class="from area" placeholder="Mensaje"></textarea>
+            <button class="but">Enviar</button>
+        </div>
       </div>
-      <p class="footer--copy"> &copy; 2021 LENNA</p>
+    </div>
+
+    <footer class="pie-pagina">
+      <div class="grupo">
+          <div class="box1">
+              <figure>
+                  <a href="#"><img src="imagen/lenna1.jpg" alt="Logo LENNA"></a>
+              </figure>
+          </div>
+          <div class="box2">
+              <h2>SOBRE NOSOTROS</h2>
+              <P>Nuestro compromiso es ofrecer una gran variedad de prendas con una excelente relación
+                  diseño-precio-calidad.</P>
+              <p>También podes seguirnos en redes sociales para que podamos estar conectados y nos sigamos conociendo.
+              </p>
+          </div>
+          <div class="box2">
+              <h2>SEGUINOS</h2>
+              <div class="red-sociales">
+                  <a href="https://whatsapp.com" target="blank"><img src="imagen/whatsapp21.png"></a>
+                  <a href="https://instagram.com" target="blank"><img src="imagen/Instagram2.png"></a>
+                  <a href="https://facebook.com" target="blank"><img src="imagen/Facebook2.png"></a>
+              </div>
+          </div>
+      </div>
+      <div class="copy">
+          <p>&copy; 2021 <b>LENNA</b> - todos los derechos reservados</p>
+      </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+  </script>
   </body>
 </html>
