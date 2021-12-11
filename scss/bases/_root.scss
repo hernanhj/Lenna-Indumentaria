@@ -1,0 +1,30 @@
+/*Cambios Generales*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Body*/
+body{
+    color: #05233b;
+    font-family: 'Ultra', serif;
+}
+/*Logo*/
+.logo{
+    border-radius: 56px;
+    width: 60px;
+    height: 60px;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+/*Imagenes Generales*/
+.img-general{
+    max-width: 100%;
+    height: 210px;
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

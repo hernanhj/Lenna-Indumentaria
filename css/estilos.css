@@ -306,7 +306,7 @@ i a.active, li a:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("/imagen/laptopfondo.jpg") no-repeat center;
+  background: url("../imagen/laptopfondo.jpg") no-repeat center;
   background-size: cover;
   z-index: -1;
   filter: blur(1px); }
@@ -323,7 +323,7 @@ i a.active, li a:hover {
 
 .contl {
   height: 100%;
-  background: url("/imagen/laptops.jpg");
+  background: url("../imagen/laptops.jpg");
   background-size: cover; }
 
 .contr {
