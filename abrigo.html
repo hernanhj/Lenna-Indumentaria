@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Descubre nuestro catálogo de Ropa de invierno y media estacion">
-  <meta name="keywords" content="Abrigo, Parka, Buzos, Campera, Moda">
+  <meta name="keywords" content="Abrigo, Parka, Buzos, Campera, Moda, invierno,deporte">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,11 +20,11 @@
 </head>
 
 <body>
-  <header>
+  <header class="barra">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        <img src="imagen/menu-regular-24.png" alt="Logo Menu">
+        <img src="imagen/interface-button_icon.png" alt="Logo Menu">
       </label>
       <a href="index.html" class="enlace"><img src="imagen/lenna2.png" title="Inicio" alt="Logo Lenna" class="logo"></a>
       <ul>
@@ -34,93 +36,119 @@
     </nav>
   </header>
 
-  <main class="populares">
-    <h1 class="animate__animated animate__bounce animate__flipInX animate__delay-2s">ABRIGO</h1>
-    <div class="grid">
-      <div>
-        <img src="imagen/Abrigo/buzo.webp" class="imagenCatalogo">
-        <h2>Buzo</h2>
-          <select name="Talle" id="">
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-          </select>
-          <select name="Cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="6">5</option>
-            <option value="7">7</option>
-            <input type="button" value="Comprar" class="boton"/>
-          </select>
-      </div>
-      <div>
-        <ol><img src="imagen/Abrigo/campera.webp" class="imagenCatalogo"></ol>
-        <h2>Campera</h2>
-          <select name="Talle" id="">
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-          </select>
-          <select name="Cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="6">5</option>
-            <option value="7">7</option>
-            <input type="button" value="Comprar" class="boton"/>
-          </select>
-      </div>
-      <div>
-        <ol><img src="imagen/Abrigo/camperon.jpg" class="imagenCatalogo"></ol>
-        <h2>Camperon</h2>
-          <select name="Talle" id="">
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-          </select>
-          <select name="Cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="6">5</option>
-            <option value="7">7</option>
-            <input type="button" value="Comprar" class="boton"/>
-          </select>
-      </div>
-      <div>
-        <ol><img src="imagen/Abrigo/parka.jpg" class="imagenCatalogo"></ol>
-        <h2>Parka Racing</h2>
-          <select name="Talle" id="">
-            <option value="L">Large</option>
-            <option value="M">Medium</option>
-            <option value="S">Small</option>
-          </select>
-          <select name="Cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="6">5</option>
-            <option value="7">7</option>
-            <input type="button" value="Comprar" class="boton"/>
-          </select>
-      </div>
-    </div>
-  </Main>
+  <main>
+    <section>
+      <h1 class="animate__animated animate__bounce animate__flipInX animate__delay-2s">ABRIGO</h1>
+      <div class="container">
+        <div class="item">
+          <div class="item-text">
+            <img src="imagen/Abrigo/buzo.webp" class="img-general" alt="Abrigo Buzo">
+            <h3>Buzo</h3>
+            <h4>Buzo de hombre Grayson</h4>
+            <p>$1.xxx,xx</p>
+            <p><strong>Hasta</strong> 6 cuotas sin interés de $2XX,XX</p>
+            <span class="btn">
+              <a href="#">Comprar</a>
+            </span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-text">
+            <img src="imagen/Abrigo/campera.webp" class="img-general" alt="Abrigo Campera">
+            <h3>Campera Sport</h3>
+            <h4>Campera de micro polar</h4>
+            <p>$1.xxx,xx</p>
+            <p><strong>Hasta</strong> 6 cuotas sin interés de $2XX,XX</p>
+            <span class="btn">
+              <a href="#">Comprar</a>
+            </span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-text">
+            <img src="imagen/Abrigo/camperon.jpg" class="img-general" alt="Abrigo Camperon">
+            <h3>Remara Y Short</h3>
+            <h4>Campera Nix con Polar</h4>
+            <p>$1.xxx,xx</p>
+            <p><strong>Hasta</strong> 6 cuotas sin interés de $2XX,XX</p>
+            <span class="btn">
+              <a href="#">Comprar</a>
+            </span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-text">
+            <img src="imagen/Abrigo/parkacap.webp" class="img-general" alt="Abrigo Parka">
+            <h3>Abrigo Parka</h3>
+            <h4>Con capucha, 100% Poliéster</h4>
+            <p>$1.xxx,xx</p>
+            <p><strong>Hasta</strong> 6 cuotas sin interés de $2XX,XX</p>
+            <span class="btn">
+              <a href="#">Comprar</a>
+            </span>
+          </div>
+        </div>
 
-  <footer class="footer">
-    <div>
-        <a href="#"><img src="imagen/contacto.png" title="Contacto" class="footer__logos"></a>
-        <a href="https://whatsapp.com" target="blank"><img src="imagen/whatsapp2.png" class="footer__logos"></a>
-        <a href="https://instagram.com" target="blank"><img src="imagen/Instagram.png" class="footer__logos"></a>
-        <a href="https://facebook.com" target="blank"><img src="imagen/Facebook.png" class="footer__logos"></a>
+        <div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="grupo">
+      <div class="box1">
+        <figure>
+          <a href="#"><img src="imagen/lenna1.jpg" alt="Logo LENNA"></a>
+        </figure>
+      </div>
+      <div class="box2">
+        <h2>SOBRE NOSOTROS</h2>
+        <P>Nuestro compromiso es ofrecer una gran variedad de prendas con una excelente relación
+          diseño-precio-calidad.</P>
+        <p>También podes seguirnos en redes sociales para que podamos estar conectados y nos sigamos conociendo.
+        </p>
+      </div>
+      <div class="box2">
+        <h2>SEGUINOS</h2>
+        <div class="red-sociales">
+          <a href="https://whatsapp.com" target="blank"><img src="imagen/whatsapp21.png" alt="logo whatsapp"></a>
+          <a href="https://instagram.com" target="blank"><img src="imagen/Instagram2.png" alt="logo instagram"></a>
+          <a href="https://facebook.com" target="blank"><img src="imagen/Facebook2.png" alt="logo facebook"></a>
+        </div>
+      </div>
     </div>
-    <p class="footer--copy"> &copy; 2021 LENNA</p>
-</footer>
+    <div class="copy">
+      <p>&copy; 2021 <b>LENNA</b> - todos los derechos reservados</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("a[title|='Hosted on free web hosting 000webhost.com. Host your own website for       FREE.']").css("display", "none");
+      $("img[alt|='www.000webhost.com']").css("display", "none");
+    });
+  </script>
 </body>
 
 </html>
