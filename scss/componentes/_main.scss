@@ -68,12 +68,6 @@
     }
 }
 
-/*Page*/
-.pagination{
-    justify-content: center;
-    background-color: #efefef;
-}
-
 /*seccion*/
 .nosotros{
     margin-top: 20px;
@@ -110,7 +104,6 @@
     grid-gap: 30px;
 }
 .item{
-    
     cursor: pointer;
     box-shadow: 0 0 15px $clr-cP;
     transition: 0.3s;
@@ -138,6 +131,6 @@
 
 @media (max-width: 768px){
     .container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
 }
